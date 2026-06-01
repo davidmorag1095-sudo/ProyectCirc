@@ -7,6 +7,7 @@ from view.boleteria_menu import BoleteriaMenu
 from view.cliente_menu import ClienteMenu
 from view.login_view import LoginView
 
+
 class CircoApp:
     def __init__(self) -> None:
         self.root = tk.Tk()

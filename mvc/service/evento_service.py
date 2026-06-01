@@ -19,15 +19,18 @@ class EventoService:
     def __init__(self, repositorio: Optional[EventoRepository] = None) -> None:
         self.repositorio = repositorio or EventoRepository()
 
+    # ------------------------------------------------------------------
     def _parse_fecha(self, fecha: str) -> datetime:
         return datetime.strptime(fecha.strip(), "%Y-%m-%d")
 
+    # ------------------------------------------------------------------
     def _parse_hora(self, hora: str) -> datetime:
         hora_limpia = hora.strip()
         if ":" not in hora_limpia:
             hora_limpia = f"{int(hora_limpia):02d}:00"
         return datetime.strptime(hora_limpia, "%H:%M")
 
+    # ------------------------------------------------------------------
     def _validar_entrada_evento(
         self,
         nombre: str,
@@ -55,6 +58,7 @@ class EventoService:
 
         return True, "OK"
 
+    # ------------------------------------------------------------------
     def _hay_conflicto_horario(
         self,
         fecha: str,
@@ -79,6 +83,7 @@ class EventoService:
 
         return False
 
+    # ------------------------------------------------------------------
     def _normalizar_precios(self, precios_por_zona: Optional[Dict[str, float]]) -> Dict[str, float]:
         base = {
             "General": self.PRECIO_MINIMO_GENERAL,
@@ -102,6 +107,7 @@ class EventoService:
 
         return normalizados
 
+    # ------------------------------------------------------------------
     def programar_evento(
         self,
         nombre: str,
@@ -134,6 +140,7 @@ class EventoService:
         self.repositorio.agregar(evento)
         return True, "Show programado correctamente.", evento
 
+    # ------------------------------------------------------------------
     def actualizar_precios(
         self,
         evento_id: int,
@@ -154,6 +161,7 @@ class EventoService:
         self.repositorio.actualizar(evento)
         return True, "Precios actualizados correctamente."
 
+    # ------------------------------------------------------------------
     def actualizar_evento(
         self,
         evento_id: int,
@@ -190,6 +198,7 @@ class EventoService:
         self.repositorio.actualizar(evento)
         return True, "Show actualizado correctamente."
 
+    # ------------------------------------------------------------------
     def aumentar_capacidad(
         self,
         evento_id: int,
@@ -215,6 +224,7 @@ class EventoService:
         self.repositorio.actualizar(evento)
         return True, "Capacidad actualizada correctamente."
 
+    # ------------------------------------------------------------------
     def eliminar_evento(self, evento_id: int, tiene_tickets: bool) -> Tuple[bool, str]:
         if tiene_tickets:
             return False, "No se puede eliminar el show porque ya tiene ventas registradas."
@@ -224,27 +234,33 @@ class EventoService:
             return False, "No se encontro el show a eliminar."
         return True, "Show eliminado correctamente."
 
+    # ------------------------------------------------------------------
     def _clave_evento_por_id(self, evento: Evento) -> int:
         return evento.identificador
 
+    # ------------------------------------------------------------------
     def _clave_evento_por_hora(self, evento: Evento) -> str:
         return evento.hora_inicio
 
+    # ------------------------------------------------------------------
     def listar_eventos(self) -> List[Evento]:
         eventos = self.repositorio.obtener_todos()
         eventos_ordenados = list(eventos)
         eventos_ordenados.sort(key=self._clave_evento_por_id)
         return eventos_ordenados
 
+    # ------------------------------------------------------------------
     def listar_eventos_por_fecha(self, fecha: str) -> List[Evento]:
         eventos_por_fecha = self.repositorio.obtener_por_fecha(fecha)
         eventos_ordenados = list(eventos_por_fecha)
         eventos_ordenados.sort(key=self._clave_evento_por_hora)
         return eventos_ordenados
 
+    # ------------------------------------------------------------------
     def obtener_evento(self, evento_id: int) -> Optional[Evento]:
         return self.repositorio.obtener_por_id(evento_id)
 
+    # ------------------------------------------------------------------
     def obtener_eventos_por_categoria(self, categoria: str) -> List[Evento]:
         categoria_buscada = categoria.strip().lower()
         eventos_filtrados = []
@@ -253,6 +269,7 @@ class EventoService:
                 eventos_filtrados.append(evento)
         return eventos_filtrados
 
+    # ------------------------------------------------------------------
     def cargar_shows_demo(self) -> int:
         shows_demo = [
             {

@@ -4,7 +4,7 @@ Esta guia permite validar rapidamente que el sistema cumple con los escenarios p
 
 ## 1) Acceso al sistema
 
-1. Ejecutar `python mvc/main.py`.
+1. Ejecutar el main.
 2. Iniciar sesion con los usuarios demo de `Administrador`, `Cajero` y `Cliente`.
 3. Confirmar que cada rol muestra su modulo correspondiente.
 

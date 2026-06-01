@@ -5,6 +5,3 @@ __pycache__/
 # IDE
 .idea/
 
-# Temporal local
-_tmp_zip/
-_pdf_texts/

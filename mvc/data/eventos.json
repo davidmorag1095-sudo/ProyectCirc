@@ -131,5 +131,43 @@
       "Preferencial": 15,
       "General": 15
     }
+  },
+  {
+    "identificador": 9,
+    "nombre": "Sinfonia Aerea",
+    "categoria": "Musical",
+    "fecha": "2026-06-05",
+    "hora_inicio": "19:00",
+    "duracion_minutos": 85,
+    "descripcion": "Presentacion musical con acrobacias sincronizadas en altura.",
+    "precios_por_zona": {
+      "General": 2700,
+      "Preferencial": 3900,
+      "VIP": 5500
+    },
+    "capacidad_por_zona": {
+      "VIP": 10,
+      "Preferencial": 15,
+      "General": 15
+    }
+  },
+  {
+    "identificador": 10,
+    "nombre": "Rueda Extrema",
+    "categoria": "Acrobacia",
+    "fecha": "2026-06-06",
+    "hora_inicio": "17:30",
+    "duracion_minutos": 95,
+    "descripcion": "Acto de rueda alemana con acrobacia de alta dificultad.",
+    "precios_por_zona": {
+      "General": 2900,
+      "Preferencial": 4200,
+      "VIP": 5600
+    },
+    "capacidad_por_zona": {
+      "VIP": 10,
+      "Preferencial": 15,
+      "General": 15
+    }
   }
 ]

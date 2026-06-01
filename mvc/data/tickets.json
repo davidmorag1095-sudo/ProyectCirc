@@ -148,5 +148,55 @@
     "precio": 3500.0,
     "fecha_compra": "2026-05-31 18:52:05",
     "metodo_pago": "Efectivo"
+  },
+  {
+    "identificador": 16,
+    "evento_id": 2,
+    "usuario_id": 4,
+    "zona": "General",
+    "numero_asiento": 1,
+    "precio": 2800,
+    "fecha_compra": "2026-06-01 14:10:00",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "identificador": 17,
+    "evento_id": 2,
+    "usuario_id": 5,
+    "zona": "VIP",
+    "numero_asiento": 1,
+    "precio": 5400,
+    "fecha_compra": "2026-06-01 14:12:00",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "identificador": 18,
+    "evento_id": 4,
+    "usuario_id": 6,
+    "zona": "General",
+    "numero_asiento": 1,
+    "precio": 2500,
+    "fecha_compra": "2026-06-01 14:20:00",
+    "metodo_pago": "Efectivo"
+  },
+  {
+    "identificador": 19,
+    "evento_id": 9,
+    "usuario_id": 7,
+    "zona": "Preferencial",
+    "numero_asiento": 1,
+    "precio": 3900,
+    "fecha_compra": "2026-06-01 14:30:00",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "identificador": 20,
+    "evento_id": 10,
+    "usuario_id": 4,
+    "zona": "VIP",
+    "numero_asiento": 1,
+    "precio": 5600,
+    "fecha_compra": "2026-06-01 14:35:00",
+    "metodo_pago": "Tarjeta"
   }
 ]

@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "identificador": 1,
     "nombre_completo": "Admin Principal",
@@ -22,5 +22,37 @@
     "contrasena": "cliente123",
     "rol": "Cliente",
     "direccion": null
+  },
+  {
+    "identificador": 4,
+    "nombre_completo": "Maria Torres",
+    "correo_electronico": "maria.torres@circo.com",
+    "contrasena": "maria123",
+    "rol": "Cliente",
+    "direccion": "San Jose, Costa Rica"
+  },
+  {
+    "identificador": 5,
+    "nombre_completo": "Luis Herrera",
+    "correo_electronico": "luis.herrera@circo.com",
+    "contrasena": "luis123",
+    "rol": "Cliente",
+    "direccion": "Heredia, Costa Rica"
+  },
+  {
+    "identificador": 6,
+    "nombre_completo": "Andrea Solis",
+    "correo_electronico": "andrea.solis@circo.com",
+    "contrasena": "andrea123",
+    "rol": "Cliente",
+    "direccion": "Cartago, Costa Rica"
+  },
+  {
+    "identificador": 7,
+    "nombre_completo": "Paola Vega",
+    "correo_electronico": "paola.vega@circo.com",
+    "contrasena": "paola123",
+    "rol": "Cliente",
+    "direccion": "Alajuela, Costa Rica"
   }
 ]

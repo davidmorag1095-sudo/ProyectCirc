@@ -155,7 +155,7 @@
     "usuario_id": 4,
     "zona": "General",
     "numero_asiento": 1,
-    "precio": 2800,
+    "precio": 2800.0,
     "fecha_compra": "2026-06-01 14:10:00",
     "metodo_pago": "Tarjeta"
   },
@@ -165,7 +165,7 @@
     "usuario_id": 5,
     "zona": "VIP",
     "numero_asiento": 1,
-    "precio": 5400,
+    "precio": 5400.0,
     "fecha_compra": "2026-06-01 14:12:00",
     "metodo_pago": "Transferencia"
   },
@@ -175,7 +175,7 @@
     "usuario_id": 6,
     "zona": "General",
     "numero_asiento": 1,
-    "precio": 2500,
+    "precio": 2500.0,
     "fecha_compra": "2026-06-01 14:20:00",
     "metodo_pago": "Efectivo"
   },
@@ -185,7 +185,7 @@
     "usuario_id": 7,
     "zona": "Preferencial",
     "numero_asiento": 1,
-    "precio": 3900,
+    "precio": 3900.0,
     "fecha_compra": "2026-06-01 14:30:00",
     "metodo_pago": "Tarjeta"
   },
@@ -195,8 +195,58 @@
     "usuario_id": 4,
     "zona": "VIP",
     "numero_asiento": 1,
-    "precio": 5600,
+    "precio": 5600.0,
     "fecha_compra": "2026-06-01 14:35:00",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "identificador": 21,
+    "evento_id": 5,
+    "usuario_id": 3,
+    "zona": "VIP",
+    "numero_asiento": 3,
+    "precio": 5000.0,
+    "fecha_compra": "2026-06-01 17:56:28",
+    "metodo_pago": "Transferencia"
+  },
+  {
+    "identificador": 22,
+    "evento_id": 5,
+    "usuario_id": null,
+    "zona": "VIP",
+    "numero_asiento": 4,
+    "precio": 5000.0,
+    "fecha_compra": "2026-06-01 17:58:48",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "identificador": 23,
+    "evento_id": 5,
+    "usuario_id": null,
+    "zona": "VIP",
+    "numero_asiento": 5,
+    "precio": 5000.0,
+    "fecha_compra": "2026-06-01 17:59:26",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "identificador": 24,
+    "evento_id": 5,
+    "usuario_id": null,
+    "zona": "VIP",
+    "numero_asiento": 6,
+    "precio": 5000.0,
+    "fecha_compra": "2026-06-01 17:59:27",
+    "metodo_pago": "Tarjeta"
+  },
+  {
+    "identificador": 25,
+    "evento_id": 5,
+    "usuario_id": null,
+    "zona": "VIP",
+    "numero_asiento": 7,
+    "precio": 5000.0,
+    "fecha_compra": "2026-06-01 17:59:30",
     "metodo_pago": "Tarjeta"
   }
 ]
